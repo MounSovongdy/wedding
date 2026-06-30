@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A premium static wedding e-invitation for Sovongdy and Votey."
+    />
+    <title>Sovongdy & Votey | Wedding Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="loader" data-loader aria-label="Wedding invitation loading">
+      <div class="loader__mark" aria-hidden="true">D&T</div>
+      <div class="loader__line" aria-hidden="true"></div>
+      <p>Opening the invitation</p>
+    </div>
+
+    <!-- <header class="site-header" aria-label="Primary navigation">
+      <nav class="nav-links" aria-label="Invitation sections">
+        <a href="#story">Story</a>
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#location">Location</a>
+      </nav>
+    </header> -->
+
+    <main id="home">
+      <!-- Hero Section: Replace the image URL with assets/images/hero-couple.jpg after adding the couple photo. -->
+      <section class="hero section-dark" aria-labelledby="hero-title">
+        <img
+          class="hero__image"
+          src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2400&q=85"
+          alt="Elegant wedding couple standing together in soft natural light"
+        />
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="hero__content reveal">
+          <p class="eyebrow">Together with their families</p>
+          <h1 id="hero-title">Sovongdy & Votey</h1>
+          <p class="hero__date">Friday, 18 June 2027</p>
+          <p class="hero__subtitle">
+            An intimate celebration of love, family, and the beginning of forever.
+          </p>
+          <a class="button button--light" href="#countdown">Open Invitation</a>
+        </div>
+      </section>
+
+      <!-- Countdown Section -->
+      <section id="countdown" class="section countdown-section" aria-labelledby="countdown-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Save the date</p>
+          <h2 id="countdown-title">The Celebration Begins In</h2>
+        </div>
+        <div class="countdown-grid reveal" data-countdown="2027-06-18T17:00:00+07:00">
+          <article>
+            <span data-days>000</span>
+            <p>Days</p>
+          </article>
+          <article>
+            <span data-hours>00</span>
+            <p>Hours</p>
+          </article>
+          <article>
+            <span data-minutes>00</span>
+            <p>Minutes</p>
+          </article>
+          <article>
+            <span data-seconds>00</span>
+            <p>Seconds</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Bride and Groom Section -->
+      <section class="section couple-section" aria-labelledby="couple-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Groom & Bride</p>
+          <h2 id="couple-title">A Promise, Beautifully Kept</h2>
+        </div>
+        <div class="couple-grid">
+          <article class="profile-card reveal">
+            <!-- Replace with Groom Portrait: assets/images/groom.jpg -->
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=85"
+              alt="Portrait of the groom in a tailored black suit"
+              loading="lazy"
+            />
+            <p class="eyebrow">The Groom</p>
+            <h3>Moun Sovongdy</h3>
+            <p>
+              Steady, kind, and endlessly devoted, Adrian believes love is built in
+              quiet gestures and kept through every season.
+            </p>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          </article>
+          <article class="profile-card reveal">
+            <!-- Replace with Bride Portrait: assets/images/bride.jpg -->
+            <img
+              src="https://images.unsplash.com/photo-1525258946800-98cfd641d0de?auto=format&fit=crop&w=900&q=85"
+              alt="Portrait of the Bride in a tailored black suit"
+              loading="lazy"
+            />
+            <p class="eyebrow">The Bride</p>
+            <h3>Si Sokunvotey</h3>
+            <p>
+              Graceful, thoughtful, and luminous, Celeste brings warmth to every room
+              and beauty to every ordinary moment.
+            </p>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Love Story Section -->
+      <section id="story" class="section story-section" aria-labelledby="story-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Love story</p>
+          <h2 id="story-title">The Moments That Led Us Here</h2>
+        </div>
+        <div class="story-timeline" aria-label="Relationship timeline">
+          <article class="timeline-item reveal">
+            <time datetime="2021-02-14">February 2021</time>
+            <h3>First Meet</h3>
+            <p>A quiet coffee turned into a three-hour conversation neither wanted to end.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <time datetime="2023-08-19">August 2023</time>
+            <h3>Proposal</h3>
+            <p>Under a candlelit terrace, one question became the easiest yes.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <time datetime="2024-05-05">May 2024</time>
+            <h3>Engagement</h3>
+            <p>Family, champagne, and the first glimpse of the celebration to come.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <time datetime="2026-11-21">November 2026</time>
+            <h3>Wedding Day</h3>
+            <p>The day we gather with our favorite people to begin our next chapter.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Wedding Events Section -->
+      <section id="events" class="section events-section" aria-labelledby="events-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Wedding events</p>
+          <h2 id="events-title">A Day Curated With Love</h2>
+        </div>
+        <div class="event-list">
+          <article class="event-card reveal">
+            <time>09:00 AM</time>
+            <div>
+              <h3>Traditional Ceremony</h3>
+              <p>Grand Ballroom, The Maison Hotel</p>
+              <span>An intimate family blessing in a refined modern setting.</span>
+            </div>
+          </article>
+          <article class="event-card reveal">
+            <time>05:00 PM</time>
+            <div>
+              <h3>Reception</h3>
+              <p>Garden Terrace</p>
+              <span>Champagne, soft music, and golden-hour portraits.</span>
+            </div>
+          </article>
+          <article class="event-card reveal">
+            <time>07:00 PM</time>
+            <div>
+              <h3>Dinner</h3>
+              <p>Orchid Hall</p>
+              <span>A seated dinner with speeches, toasts, and candlelit tables.</span>
+            </div>
+          </article>
+          <article class="event-card reveal">
+            <time>09:30 PM</time>
+            <div>
+              <h3>After Party</h3>
+              <p>Sky Lounge</p>
+              <span>Dancing, dessert, and late-night celebration.</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="section gallery-section" aria-labelledby="gallery-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Gallery</p>
+          <h2 id="gallery-title">A Few Favorite Frames</h2>
+        </div>
+        <div class="gallery-grid">
+          <!-- Replace gallery images with assets/images/gallery-01.jpg through gallery-06.jpg -->
+          <button class="gallery-item reveal" type="button" data-lightbox>
+            <img
+              src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=85"
+              alt="Couple walking together in wedding attire"
+              loading="lazy"
+            />
+          </button>
+          <button class="gallery-item reveal gallery-item--tall" type="button" data-lightbox>
+            <img
+              src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=85"
+              alt="Wedding reception table with candles and flowers"
+              loading="lazy"
+            />
+          </button>
+          <button class="gallery-item reveal" type="button" data-lightbox>
+            <img
+              src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=85"
+              alt="Bride holding a simple wedding bouquet"
+              loading="lazy"
+            />
+          </button>
+          <button class="gallery-item reveal gallery-item--wide" type="button" data-lightbox>
+            <img
+              src="https://images.unsplash.com/photo-1509610973147-232dfea52a97?auto=format&fit=crop&w=1400&q=85"
+              alt="Elegant wedding couple portrait outdoors"
+              loading="lazy"
+            />
+          </button>
+          <button class="gallery-item reveal" type="button" data-lightbox>
+            <img
+              src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?auto=format&fit=crop&w=900&q=85"
+              alt="Wedding rings placed on a refined surface"
+              loading="lazy"
+            />
+          </button>
+          <button class="gallery-item reveal" type="button" data-lightbox>
+            <img
+              src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=85"
+              alt="Modern wedding ceremony seating"
+              loading="lazy"
+            />
+          </button>
+        </div>
+      </section>
+
+      <!-- Dress Code Section -->
+      <section class="section dress-section" aria-labelledby="dress-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Dress code</p>
+          <h2 id="dress-title">Champagne Garden Formal</h2>
+        </div>
+        <div class="dress-grid reveal">
+          <article>
+            <div class="dress-icon" aria-hidden="true">T</div>
+            <h3>Tailored</h3>
+            <p>Black tie optional, refined silhouettes, and comfortable evening shoes.</p>
+          </article>
+          <article>
+            <div class="dress-icon" aria-hidden="true">S</div>
+            <h3>Soft Neutrals</h3>
+            <p>Champagne, sage, ivory, black, charcoal, or muted metallic accents.</p>
+          </article>
+          <article>
+            <div class="dress-icon" aria-hidden="true">E</div>
+            <h3>Elegant</h3>
+            <p>Keep the mood polished, minimal, and celebration-ready.</p>
+          </article>
+        </div>
+        <div class="swatches reveal" aria-label="Suggested dress code colors">
+          <span class="swatch swatch--champagne"></span>
+          <span class="swatch swatch--sage"></span>
+          <span class="swatch swatch--olive"></span>
+          <span class="swatch swatch--gold"></span>
+          <span class="swatch swatch--ink"></span>
+        </div>
+      </section>
+
+      <!-- Gifts Section -->
+      <!-- <section class="section gifts-section" aria-labelledby="gifts-title">
+        <div class="gifts-card reveal">
+          <div>
+            <p class="eyebrow">Gifts</p>
+            <h2 id="gifts-title">Your Presence Is Our Greatest Gift</h2>
+            <p>
+              For guests who wish to send a blessing, kindly use the details below.
+            </p>
+            <dl class="gift-details">
+              <div>
+                <dt>Bank Account</dt>
+                <dd>Celeste Laurent · 001 234 567 · Premium Bank</dd>
+              </div>
+              <div>
+                <dt>Telegram</dt>
+                <dd>@adrianandceleste</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="qr-card">
+            <img
+              src="https://placehold.co/420x420/F8F6F2/4E5A4A?text=QR+Payment"
+              alt="QR payment placeholder"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Location Section -->
+      <section id="location" class="section location-section" aria-labelledby="location-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Location</p>
+          <h2 id="location-title">Find the Celebration</h2>
+          <p>
+            Join us at The Maison Hotel, 45 Riverside Avenue, Phnom Penh,
+            Cambodia.
+          </p>
+        </div>
+        <div class="location-card reveal">
+          <div class="location-details">
+            <p class="eyebrow">Wedding venue</p>
+            <h3>PH Grand Hall Wedding and Convention Hall</h3>
+            <p>
+              45 Riverside Avenue, Phnom Penh, Cambodia. Parking and guest
+              drop-off are available at the main entrance.
+            </p>
+            <a
+              class="button button--dark"
+              href="https://maps.app.goo.gl/FZSGNwSRbft8VcmXA"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open in Google Maps
+            </a>
+          </div>
+          <div class="location-map" aria-label="Google map showing the wedding location">
+            <iframe
+              title="Wedding location on Google Maps"
+              src="https://www.google.com/maps?q=Phnom%20Penh%20Cambodia&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Wedding Wishes Section -->
+      <section class="section wishes-section" aria-labelledby="wishes-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Wedding wishes</p>
+          <h2 id="wishes-title">Words From Loved Ones</h2>
+        </div>
+        <div class="wishes-grid">
+          <blockquote class="wish-card reveal">
+            <p>“May your marriage be filled with quiet joy, deep friendship, and endless grace.”</p>
+            <cite>— Sophia</cite>
+          </blockquote>
+          <blockquote class="wish-card reveal">
+            <p>“Wishing you a lifetime of beautiful mornings and celebrations both big and small.”</p>
+            <cite>— Daniel</cite>
+          </blockquote>
+          <blockquote class="wish-card reveal">
+            <p>“Your love is timeless. We are honored to witness this next chapter.”</p>
+            <cite>— The Laurent Family</cite>
+          </blockquote>
+          <blockquote class="wish-card reveal">
+            <p>“Wishing you a lifetime of beautiful mornings and celebrations both big and small.”</p>
+            <cite>— Daniel</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- Thank You Section: Replace the image URL with assets/images/thank-you.jpg. -->
+      <section class="thank-you section-dark" aria-labelledby="thank-title">
+        <img
+          src="https://images.unsplash.com/photo-1529634597503-139d3726fed5?auto=format&fit=crop&w=2200&q=85"
+          alt="Soft wedding table setting with candles"
+          loading="lazy"
+        />
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="thank-you__content reveal">
+          <p class="eyebrow">Thank you</p>
+          <h2 id="thank-title">With Love and Gratitude</h2>
+          <p>
+            We cannot wait to celebrate this once-in-a-lifetime day with you.
+          </p>
+          <span class="signature">Adrian & Celeste</span>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" data-lightbox-modal aria-hidden="true" role="dialog" aria-label="Gallery image preview">
+      <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close image preview">×</button>
+      <img src="" alt="" data-lightbox-image />
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
