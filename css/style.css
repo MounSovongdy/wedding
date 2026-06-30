@@ -103,6 +103,58 @@ button {
   text-transform: uppercase;
 }
 
+.music-toggle {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 60;
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  gap: 0.65rem;
+  border: 1px solid rgba(78, 90, 74, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--color-olive);
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  box-shadow: 0 14px 42px rgba(46, 46, 46, 0.14);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.music-toggle:hover,
+.music-toggle:focus-visible {
+  transform: translateY(-2px);
+}
+
+.music-toggle.is-playing {
+  background: var(--color-olive);
+  color: var(--color-white);
+}
+
+.music-toggle__icon {
+  position: relative;
+  width: 14px;
+  height: 18px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
+
+.music-toggle__icon::before {
+  position: absolute;
+  right: -6px;
+  bottom: -7px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: currentColor;
+  content: "";
+}
+
 .site-header {
   position: fixed;
   top: 0;

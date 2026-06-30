@@ -3,6 +3,9 @@ const countdown = document.querySelector("[data-countdown]");
 const lightbox = document.querySelector("[data-lightbox-modal]");
 const lightboxImage = document.querySelector("[data-lightbox-image]");
 const lightboxClose = document.querySelector("[data-lightbox-close]");
+const weddingAudio = document.querySelector("[data-wedding-audio]");
+const musicToggle = document.querySelector("[data-music-toggle]");
+const musicLabel = document.querySelector("[data-music-label]");
 
 document.body.classList.add("is-loading");
 
@@ -12,6 +15,38 @@ window.addEventListener("load", () => {
     document.body.classList.remove("is-loading");
   }, 900);
 });
+
+function setMusicState(isPlaying) {
+  if (!musicToggle || !musicLabel) {
+    return;
+  }
+
+  musicToggle.classList.toggle("is-playing", isPlaying);
+  musicToggle.setAttribute("aria-pressed", String(isPlaying));
+  musicToggle.setAttribute("aria-label", isPlaying ? "Pause wedding music" : "Play wedding music");
+  musicLabel.textContent = isPlaying ? "Music On" : "Music Off";
+}
+
+musicToggle?.addEventListener("click", async () => {
+  if (!weddingAudio) {
+    return;
+  }
+
+  try {
+    if (weddingAudio.paused) {
+      await weddingAudio.play();
+      setMusicState(true);
+    } else {
+      weddingAudio.pause();
+      setMusicState(false);
+    }
+  } catch {
+    setMusicState(false);
+    musicLabel.textContent = "Add Song";
+  }
+});
+
+weddingAudio?.addEventListener("ended", () => setMusicState(false));
 
 const revealObserver = new IntersectionObserver(
   (entries) => {

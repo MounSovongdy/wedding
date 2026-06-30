@@ -33,6 +33,13 @@ Replace the placeholder image URLs with local files such as:
 - `assets/images/qr-payment.png`
 - `assets/images/thank-you.jpg`
 
+Add your wedding song as:
+
+- `assets/music/wedding-song.mp3`
+
+Browsers require a guest action before audio can play, so the website shows a
+fixed music button instead of forcing autoplay.
+
 ## Run
 
 Open `index.html` directly in a browser. No server, backend, database, package manager, or build step is required.

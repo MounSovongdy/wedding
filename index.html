@@ -24,6 +24,23 @@
       <p>Opening the invitation</p>
     </div>
 
+    <!-- Music: replace assets/music/wedding-song.mp3 with your wedding song file. -->
+    <audio data-wedding-audio preload="none" loop>
+      <source src="assets/music/wedding-song.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <button
+      class="music-toggle"
+      type="button"
+      data-music-toggle
+      aria-label="Play wedding music"
+      aria-pressed="false"
+    >
+      <span class="music-toggle__icon" aria-hidden="true"></span>
+      <span data-music-label>Music Off</span>
+    </button>
+
     <!-- <header class="site-header" aria-label="Primary navigation">
       <nav class="nav-links" aria-label="Invitation sections">
         <a href="#story">Story</a>
