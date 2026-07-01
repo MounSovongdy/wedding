@@ -1,52 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="km">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A premium static wedding e-invitation for Sovongdy and Votey."
+      content="សំបុត្រអញ្ជើញពិធីមង្គលការរបស់ Sovongdy និង Votey។"
     />
-    <title>Sovongdy & Votey | Wedding Invitation</title>
+    <title>Sovongdy & Votey | សំបុត្រអញ្ជើញមង្គលការ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Moul&family=Noto+Sans+Khmer:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Siemreap&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css?v=20260630-music" />
+    <link rel="stylesheet" href="css/style.css?v=20260701-aksar" />
   </head>
   <body>
-    <div class="loader" data-loader aria-label="Wedding invitation loading">
+    <div class="loader" data-loader aria-label="កំពុងបើកសំបុត្រអញ្ជើញមង្គលការ">
       <div class="loader__mark" aria-hidden="true">D&T</div>
       <div class="loader__line" aria-hidden="true"></div>
-      <p>Opening the invitation</p>
+      <p>កំពុងបើកសំបុត្រអញ្ជើញ</p>
     </div>
 
     <!-- Music: replace assets/music/wedding-song.mp3 with your wedding song file. -->
     <audio data-wedding-audio preload="none" loop>
       <source src="assets/music/wedding-song.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
+      កម្មវិធីរុករករបស់អ្នកមិនគាំទ្រសំឡេងនេះទេ។
     </audio>
 
     <button
       class="music-toggle fixed bottom-4 right-4 z-[60] inline-flex min-h-[46px] items-center gap-2 rounded-full border border-[#4E5A4A]/20 bg-white/90 px-4 py-3 text-xs font-semibold uppercase tracking-[0.1em] text-[#4E5A4A] shadow-xl"
       type="button"
       data-music-toggle
-      aria-label="Play wedding music"
+      aria-label="ចាក់ភ្លេងមង្គលការ"
       aria-pressed="false"
     >
       <span class="music-toggle__icon" aria-hidden="true"></span>
-      <span data-music-label>Music Off</span>
+      <span data-music-label>បិទភ្លេង</span>
     </button>
 
-    <!-- <header class="site-header" aria-label="Primary navigation">
-      <nav class="nav-links" aria-label="Invitation sections">
-        <a href="#story">Story</a>
-        <a href="#events">Events</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#location">Location</a>
+    <!-- <header class="site-header" aria-label="ម៉ឺនុយសំខាន់">
+      <nav class="nav-links" aria-label="ផ្នែកនៃសំបុត្រអញ្ជើញ">
+        <a href="#story">រឿងរ៉ាវ</a>
+        <a href="#events">កម្មវិធី</a>
+        <a href="#gallery">រូបភាព</a>
+        <a href="#location">ទីតាំង</a>
       </nav>
     </header> -->
 
@@ -56,42 +56,42 @@
         <img
           class="hero__image"
           src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2400&q=85"
-          alt="Elegant wedding couple standing together in soft natural light"
+          alt="គូស្វាមីភរិយាឈរជាមួយគ្នាក្នុងពន្លឺធម្មជាតិទន់ភ្លន់"
         />
         <div class="hero__overlay" aria-hidden="true"></div>
         <div class="hero__content reveal">
-          <p class="eyebrow">Together with their families</p>
-          <h1 id="hero-title">Vongdy & Votey</h1>
-          <p class="hero__date">Friday, 18 June 2027</p>
+          <p class="eyebrow">សូមគោរពអញ្ជើញចូលរួម</p>
+          <h1 id="hero-title">ពិធីអាពាហ៍ពិពាហ៍</h1>
+          <p class="hero__date">ថ្ងៃសុក្រ ទី 18 ខែមិថុនា ឆ្នាំ 2027</p>
           <p class="hero__subtitle">
-            An intimate celebration of love, family, and the beginning of forever.
+            សូមអញ្ជើញចូលរួមជាសក្ខីភាពនៃសេចក្តីស្រឡាញ់ និងការចាប់ផ្តើមជីវិតគូរបស់ពួកយើង។
           </p>
-          <a class="button button--light" href="#countdown">Open Invitation</a>
+          <a class="button button--light" href="#countdown">បើកសំបុត្រអញ្ជើញ</a>
         </div>
       </section>
 
       <!-- Countdown Section -->
       <section id="countdown" class="section countdown-section" aria-labelledby="countdown-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">Save the date</p>
-          <h2 id="countdown-title">The Celebration Begins In</h2>
+          <p class="eyebrow">សូមរក្សាទុកថ្ងៃនេះ</p>
+          <h2 id="countdown-title">ពិធីនឹងចាប់ផ្តើមក្នុងរយៈពេល</h2>
         </div>
         <div class="countdown-grid reveal" data-countdown="2027-06-18T17:00:00+07:00">
           <article>
             <span data-days>000</span>
-            <p>Days</p>
+            <p>ថ្ងៃ</p>
           </article>
           <article>
             <span data-hours>00</span>
-            <p>Hours</p>
+            <p>ម៉ោង</p>
           </article>
           <article>
             <span data-minutes>00</span>
-            <p>Minutes</p>
+            <p>នាទី</p>
           </article>
           <article>
             <span data-seconds>00</span>
-            <p>Seconds</p>
+            <p>វិនាទី</p>
           </article>
         </div>
       </section>
@@ -99,22 +99,21 @@
       <!-- Bride and Groom Section -->
       <section class="section couple-section" aria-labelledby="couple-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">Groom & Bride</p>
-          <h2 id="couple-title">A Promise, Beautifully Kept</h2>
+          <p class="eyebrow">កូនកំលោះ និងកូនក្រមុំ</p>
+          <h2 id="couple-title">សេចក្តីសន្យាមួយដែលយើងថែរក្សា</h2>
         </div>
         <div class="couple-grid">
           <article class="profile-card reveal">
             <!-- Replace with Groom Portrait: assets/images/groom.jpg -->
             <img
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=85"
-              alt="Portrait of the groom in a tailored black suit"
+              alt="រូបថតកូនកំលោះក្នុងឈុតខ្មៅសមរម្យ"
               loading="lazy"
             />
-            <p class="eyebrow">The Groom</p>
+            <p class="eyebrow">កូនកំលោះ</p>
             <h3>Moun Sovongdy</h3>
             <p>
-              Steady, kind, and endlessly devoted, Adrian believes love is built in
-              quiet gestures and kept through every season.
+              សុភាព ស្មោះត្រង់ និងមានក្តីស្រឡាញ់ចំពោះគ្រួសារ។ គាត់ជឿថា សេចក្តីស្រឡាញ់កើតឡើងពីការយកចិត្តទុកដាក់រៀងរាល់ថ្ងៃ។
             </p>
             <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
           </article>
@@ -122,14 +121,13 @@
             <!-- Replace with Bride Portrait: assets/images/bride.jpg -->
             <img
               src="https://images.unsplash.com/photo-1525258946800-98cfd641d0de?auto=format&fit=crop&w=900&q=85"
-              alt="Portrait of the Bride in a tailored black suit"
+              alt="រូបថតកូនក្រមុំក្នុងឈុតសមរម្យ"
               loading="lazy"
             />
-            <p class="eyebrow">The Bride</p>
+            <p class="eyebrow">កូនក្រមុំ</p>
             <h3>Si Sokunvotey</h3>
             <p>
-              Graceful, thoughtful, and luminous, Celeste brings warmth to every room
-              and beauty to every ordinary moment.
+              ស្រស់ស្អាត ទន់ភ្លន់ និងពេញដោយភាពកក់ក្តៅ។ នាងនាំមកនូវស្នាមញញឹម និងសេចក្តីសុខដល់មនុស្សជុំវិញខ្លួន។
             </p>
             <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
           </article>
@@ -139,29 +137,29 @@
       <!-- Love Story Section -->
       <section id="story" class="section story-section" aria-labelledby="story-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">Love story</p>
-          <h2 id="story-title">The Moments That Led Us Here</h2>
+          <p class="eyebrow">រឿងរ៉ាវស្នេហា</p>
+          <h2 id="story-title">គ្រាដែលនាំយើងមកដល់ថ្ងៃនេះ</h2>
         </div>
-        <div class="story-timeline" aria-label="Relationship timeline">
+        <div class="story-timeline" aria-label="ពេលវេលានៃទំនាក់ទំនង">
           <article class="timeline-item reveal">
-            <time datetime="2021-02-14">February 2021</time>
-            <h3>First Meet</h3>
-            <p>A quiet coffee turned into a three-hour conversation neither wanted to end.</p>
+            <time datetime="2021-02-14">ខែកុម្ភៈ 2021</time>
+            <h3>ជួបគ្នាលើកដំបូង</h3>
+            <p>កាហ្វេមួយកែវបានក្លាយជាការសន្ទនាយូរមួយ ដែលយើងទាំងពីរមិនចង់ឱ្យបញ្ចប់។</p>
           </article>
           <article class="timeline-item reveal">
-            <time datetime="2023-08-19">August 2023</time>
-            <h3>Proposal</h3>
-            <p>Under a candlelit terrace, one question became the easiest yes.</p>
+            <time datetime="2023-08-19">ខែសីហា 2023</time>
+            <h3>សុំរៀបការ</h3>
+            <p>ក្រោមពន្លឺទៀន សំណួរមួយបានក្លាយជាចម្លើយ “យល់ព្រម” ដ៏មានន័យបំផុត។</p>
           </article>
           <article class="timeline-item reveal">
-            <time datetime="2024-05-05">May 2024</time>
-            <h3>Engagement</h3>
-            <p>Family, champagne, and the first glimpse of the celebration to come.</p>
+            <time datetime="2024-05-05">ខែឧសភា 2024</time>
+            <h3>ពិធីភ្ជាប់ពាក្យ</h3>
+            <p>គ្រួសារ មិត្តជិតស្និទ្ធ និងស្នាមញញឹម បានចាប់ផ្តើមដំណើរទៅកាន់ពិធីមង្គលការ។</p>
           </article>
           <article class="timeline-item reveal">
-            <time datetime="2026-11-21">November 2026</time>
-            <h3>Wedding Day</h3>
-            <p>The day we gather with our favorite people to begin our next chapter.</p>
+            <time datetime="2027-06-18">ខែមិថុនា 2027</time>
+            <h3>ថ្ងៃមង្គលការ</h3>
+            <p>ថ្ងៃដែលយើងជួបជុំជាមួយមនុស្សជាទីស្រឡាញ់ ដើម្បីចាប់ផ្តើមជំពូកថ្មីរួមគ្នា។</p>
           </article>
         </div>
       </section>
@@ -169,40 +167,40 @@
       <!-- Wedding Events Section -->
       <section id="events" class="section events-section" aria-labelledby="events-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">Wedding events</p>
-          <h2 id="events-title">A Day Curated With Love</h2>
+          <p class="eyebrow">កម្មវិធីមង្គលការ</p>
+          <h2 id="events-title">ថ្ងៃពិសេសដែលរៀបចំដោយក្តីស្រឡាញ់</h2>
         </div>
         <div class="event-list">
           <article class="event-card reveal">
-            <time>09:00 AM</time>
+            <time>09:00 ព្រឹក</time>
             <div>
-              <h3>Traditional Ceremony</h3>
+              <h3>ពិធីប្រពៃណី</h3>
               <p>Grand Ballroom, The Maison Hotel</p>
-              <span>An intimate family blessing in a refined modern setting.</span>
+              <span>ពិធីជួបជុំគ្រួសារ និងទទួលពរជ័យក្នុងបរិយាកាសសាមញ្ញទំនើប។</span>
             </div>
           </article>
           <article class="event-card reveal">
-            <time>05:00 PM</time>
+            <time>05:00 ល្ងាច</time>
             <div>
-              <h3>Reception</h3>
+              <h3>ទទួលភ្ញៀវ</h3>
               <p>Garden Terrace</p>
-              <span>Champagne, soft music, and golden-hour portraits.</span>
+              <span>ការស្វាគមន៍ភ្ញៀវ ការថតរូប និងតន្ត្រីស្រាលៗក្នុងពេលល្ងាច។</span>
             </div>
           </article>
           <article class="event-card reveal">
-            <time>07:00 PM</time>
+            <time>07:00 យប់</time>
             <div>
-              <h3>Dinner</h3>
+              <h3>ពិសាអាហារពេលល្ងាច</h3>
               <p>Orchid Hall</p>
-              <span>A seated dinner with speeches, toasts, and candlelit tables.</span>
+              <span>អាហារពេលល្ងាច សុន្ទរកថា និងការជូនពរពីគ្រួសារ និងមិត្តភក្តិ។</span>
             </div>
           </article>
           <article class="event-card reveal">
-            <time>09:30 PM</time>
+            <time>09:30 យប់</time>
             <div>
-              <h3>After Party</h3>
+              <h3>កម្មវិធីបន្ត</h3>
               <p>Sky Lounge</p>
-              <span>Dancing, dessert, and late-night celebration.</span>
+              <span>រាំលេង បង្អែម និងការអបអរសាទររហូតដល់យប់។</span>
             </div>
           </article>
         </div>
@@ -211,50 +209,50 @@
       <!-- Gallery Section -->
       <section id="gallery" class="section gallery-section" aria-labelledby="gallery-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">Gallery</p>
-          <h2 id="gallery-title">A Few Favorite Frames</h2>
+          <p class="eyebrow">រូបភាពអនុស្សាវរីយ៍</p>
+          <h2 id="gallery-title">គ្រាដ៏ស្រស់ស្អាតមួយចំនួន</h2>
         </div>
         <div class="gallery-grid">
           <!-- Replace gallery images with assets/images/gallery-01.jpg through gallery-06.jpg -->
           <button class="gallery-item reveal" type="button" data-lightbox>
             <img
               src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=85"
-              alt="Couple walking together in wedding attire"
+              alt="គូស្នេហ៍ដើរជាមួយគ្នាក្នុងសម្លៀកបំពាក់មង្គលការ"
               loading="lazy"
             />
           </button>
           <button class="gallery-item reveal gallery-item--tall" type="button" data-lightbox>
             <img
               src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=85"
-              alt="Wedding reception table with candles and flowers"
+              alt="តុទទួលភ្ញៀវមង្គលការដែលមានទៀន និងផ្កា"
               loading="lazy"
             />
           </button>
           <button class="gallery-item reveal" type="button" data-lightbox>
             <img
               src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=85"
-              alt="Bride holding a simple wedding bouquet"
+              alt="កូនក្រមុំកាន់ផ្កាអាពាហ៍ពិពាហ៍សាមញ្ញ"
               loading="lazy"
             />
           </button>
           <button class="gallery-item reveal gallery-item--wide" type="button" data-lightbox>
             <img
               src="https://images.unsplash.com/photo-1509610973147-232dfea52a97?auto=format&fit=crop&w=1400&q=85"
-              alt="Elegant wedding couple portrait outdoors"
+              alt="រូបថតគូស្វាមីភរិយាក្រៅអគារយ៉ាងស្រស់ស្អាត"
               loading="lazy"
             />
           </button>
           <button class="gallery-item reveal" type="button" data-lightbox>
             <img
               src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?auto=format&fit=crop&w=900&q=85"
-              alt="Wedding rings placed on a refined surface"
+              alt="ចិញ្ចៀនមង្គលការដាក់លើផ្ទៃស្អាត"
               loading="lazy"
             />
           </button>
           <button class="gallery-item reveal" type="button" data-lightbox>
             <img
               src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=85"
-              alt="Modern wedding ceremony seating"
+              alt="កន្លែងអង្គុយពិធីមង្គលការរចនាទំនើប"
               loading="lazy"
             />
           </button>
@@ -262,36 +260,36 @@
       </section>
 
       <!-- Dress Code Section -->
-      <section class="section dress-section" aria-labelledby="dress-title">
+      <!-- <section class="section dress-section" aria-labelledby="dress-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">Dress code</p>
-          <h2 id="dress-title">Champagne Garden Formal</h2>
+          <p class="eyebrow">សម្លៀកបំពាក់</p>
+          <h2 id="dress-title">សុភាព សាមញ្ញ និងទាន់សម័យ</h2>
         </div>
         <div class="dress-grid reveal">
           <article>
-            <div class="dress-icon" aria-hidden="true">T</div>
-            <h3>Tailored</h3>
-            <p>Black tie optional, refined silhouettes, and comfortable evening shoes.</p>
+            <div class="dress-icon" aria-hidden="true">1</div>
+            <h3>សុភាពរាបសារ</h3>
+            <p>សូមជ្រើសរើសសម្លៀកបំពាក់សមរម្យ មានរចនាបថសាមញ្ញ និងផាសុកភាព។</p>
           </article>
           <article>
-            <div class="dress-icon" aria-hidden="true">S</div>
-            <h3>Soft Neutrals</h3>
-            <p>Champagne, sage, ivory, black, charcoal, or muted metallic accents.</p>
+            <div class="dress-icon" aria-hidden="true">2</div>
+            <h3>ពណ៌ទន់</h3>
+            <p>ពណ៌ស្រាសាំប៉ាញ បៃតងស្រាល ភ្លុក ខ្មៅ ប្រផេះចាស់ ឬពណ៌លោហធាតុស្រាលៗ។</p>
           </article>
           <article>
-            <div class="dress-icon" aria-hidden="true">E</div>
-            <h3>Elegant</h3>
-            <p>Keep the mood polished, minimal, and celebration-ready.</p>
+            <div class="dress-icon" aria-hidden="true">3</div>
+            <h3>ទាន់សម័យ</h3>
+            <p>រក្សារូបរាងឱ្យស្អាត សាមញ្ញ និងស័ក្តិសមសម្រាប់ការអបអរសាទរ។</p>
           </article>
         </div>
-        <div class="swatches reveal" aria-label="Suggested dress code colors">
+        <div class="swatches reveal" aria-label="ពណ៌សម្លៀកបំពាក់ដែលណែនាំ">
           <span class="swatch swatch--champagne"></span>
           <span class="swatch swatch--sage"></span>
           <span class="swatch swatch--olive"></span>
           <span class="swatch swatch--gold"></span>
           <span class="swatch swatch--ink"></span>
         </div>
-      </section>
+      </section> -->
 
       <!-- Gifts Section -->
       <!-- <section class="section gifts-section" aria-labelledby="gifts-title">
@@ -326,20 +324,19 @@
       <!-- Location Section -->
       <section id="location" class="section location-section" aria-labelledby="location-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">Location</p>
-          <h2 id="location-title">Find the Celebration</h2>
+          <p class="eyebrow">ទីតាំង</p>
+          <h2 id="location-title">ទីកន្លែងប្រារព្ធពិធី</h2>
           <p>
-            Join us at The Maison Hotel, 45 Riverside Avenue, Phnom Penh,
-            Cambodia.
+            សូមអញ្ជើញមកចូលរួមពិធីនៅ PH Grand Hall Wedding and Convention Hall,
+            Phnom Penh, Cambodia.
           </p>
         </div>
         <div class="location-card reveal">
           <div class="location-details">
-            <p class="eyebrow">Wedding venue</p>
+            <p class="eyebrow">ទីតាំងមង្គលការ</p>
             <h3>PH Grand Hall Wedding and Convention Hall</h3>
             <p>
-              45 Riverside Avenue, Phnom Penh, Cambodia. Parking and guest
-              drop-off are available at the main entrance.
+              Phnom Penh, Cambodia. មានកន្លែងចតរថយន្ត និងចំណតទម្លាក់ភ្ញៀវនៅច្រកចូលសំខាន់។
             </p>
             <a
               class="button button--dark"
@@ -347,12 +344,12 @@
               target="_blank"
               rel="noreferrer"
             >
-              Open in Google Maps
+              បើកក្នុង Google Maps
             </a>
           </div>
-          <div class="location-map" aria-label="Google map showing the wedding location">
+          <div class="location-map" aria-label="ផែនទី Google បង្ហាញទីតាំងមង្គលការ">
             <iframe
-              title="Wedding location on Google Maps"
+              title="ទីតាំងមង្គលការនៅលើ Google Maps"
               src="https://www.google.com/maps?q=Phnom%20Penh%20Cambodia&output=embed"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -364,25 +361,25 @@
       <!-- Wedding Wishes Section -->
       <section class="section wishes-section" aria-labelledby="wishes-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">Wedding wishes</p>
-          <h2 id="wishes-title">Words From Loved Ones</h2>
+          <p class="eyebrow">ពាក្យជូនពរ</p>
+          <h2 id="wishes-title">សេចក្តីជូនពរពីមនុស្សជាទីស្រឡាញ់</h2>
         </div>
         <div class="wishes-grid">
           <blockquote class="wish-card reveal">
-            <p>“May your marriage be filled with quiet joy, deep friendship, and endless grace.”</p>
+            <p>“សូមឱ្យជីវិតអាពាហ៍ពិពាហ៍របស់អ្នកទាំងពីរពោរពេញដោយសុភមង្គល សេចក្តីស្រឡាញ់ និងការយោគយល់គ្នាជានិច្ច។”</p>
             <cite>— Sophia</cite>
           </blockquote>
           <blockquote class="wish-card reveal">
-            <p>“Wishing you a lifetime of beautiful mornings and celebrations both big and small.”</p>
+            <p>“សូមជូនពរឱ្យអ្នកទាំងពីរមានស្នាមញញឹមរៀងរាល់ថ្ងៃ និងរីករាយជាមួយគ្រាតូចធំទាំងអស់ក្នុងជីវិត។”</p>
             <cite>— Daniel</cite>
           </blockquote>
           <blockquote class="wish-card reveal">
-            <p>“Your love is timeless. We are honored to witness this next chapter.”</p>
-            <cite>— The Laurent Family</cite>
+            <p>“សេចក្តីស្រឡាញ់របស់អ្នកទាំងពីរគឺស្រស់ស្អាតណាស់។ យើងមានកិត្តិយសបានចូលរួមជាសក្ខីភាពក្នុងជំពូកថ្មីនេះ។”</p>
+            <cite>— គ្រួសារ</cite>
           </blockquote>
           <blockquote class="wish-card reveal">
-            <p>“Wishing you a lifetime of beautiful mornings and celebrations both big and small.”</p>
-            <cite>— Daniel</cite>
+            <p>“សូមឱ្យផ្ទះថ្មីរបស់អ្នកទាំងពីរពោរពេញដោយភាពកក់ក្តៅ សេចក្តីជឿជាក់ និងក្តីស្រឡាញ់មិនចេះសាបសូន្យ។”</p>
+            <cite>— មិត្តភក្តិ</cite>
           </blockquote>
         </div>
       </section>
@@ -391,26 +388,26 @@
       <section class="thank-you section-dark" aria-labelledby="thank-title">
         <img
           src="https://images.unsplash.com/photo-1529634597503-139d3726fed5?auto=format&fit=crop&w=2200&q=85"
-          alt="Soft wedding table setting with candles"
+          alt="ការរៀបចំតុមង្គលការដ៏ទន់ភ្លន់ជាមួយទៀន"
           loading="lazy"
         />
         <div class="hero__overlay" aria-hidden="true"></div>
         <div class="thank-you__content reveal">
-          <p class="eyebrow">Thank you</p>
-          <h2 id="thank-title">With Love and Gratitude</h2>
+          <p class="eyebrow">សូមអរគុណ</p>
+          <h2 id="thank-title">ដោយក្តីស្រឡាញ់ និងការដឹងគុណ</h2>
           <p>
-            We cannot wait to celebrate this once-in-a-lifetime day with you.
+            យើងរីករាយណាស់ដែលនឹងបានអបអរសាទរថ្ងៃដ៏ពិសេសនេះជាមួយអ្នក។
           </p>
-          <span class="signature">Vongdy & Votey</span>
+          <span class="signature">សុវ៉ង់ឌី & សុគន្ធវត្តី</span>
         </div>
       </section>
     </main>
 
-    <div class="lightbox" data-lightbox-modal aria-hidden="true" role="dialog" aria-label="Gallery image preview">
-      <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close image preview">×</button>
+    <div class="lightbox" data-lightbox-modal aria-hidden="true" role="dialog" aria-label="មើលរូបភាពធំ">
+      <button class="lightbox__close" type="button" data-lightbox-close aria-label="បិទរូបភាព">×</button>
       <img src="" alt="" data-lightbox-image />
     </div>
 
-    <script src="js/main.js?v=20260630-music"></script>
+    <script src="js/main.js?v=20260701-khmer"></script>
   </body>
 </html>

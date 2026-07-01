@@ -23,8 +23,8 @@ function setMusicState(isPlaying) {
 
   musicToggle.classList.toggle("is-playing", isPlaying);
   musicToggle.setAttribute("aria-pressed", String(isPlaying));
-  musicToggle.setAttribute("aria-label", isPlaying ? "Pause wedding music" : "Play wedding music");
-  musicLabel.textContent = isPlaying ? "Music On" : "Music Off";
+  musicToggle.setAttribute("aria-label", isPlaying ? "ផ្អាកភ្លេងមង្គលការ" : "ចាក់ភ្លេងមង្គលការ");
+  musicLabel.textContent = isPlaying ? "បើកភ្លេង" : "បិទភ្លេង";
 }
 
 musicToggle?.addEventListener("click", async () => {
@@ -42,7 +42,7 @@ musicToggle?.addEventListener("click", async () => {
     }
   } catch {
     setMusicState(false);
-    musicLabel.textContent = "Add Song";
+    musicLabel.textContent = "បន្ថែមបទចម្រៀង";
   }
 });
 
